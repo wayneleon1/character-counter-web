@@ -1,21 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="/styles/index.css">
-  <title>Character counter</title>
-</head>
-<body>
-<main class="container">
- <nav class="nav">
-    <img src="./assets/images/logo-dark-theme.svg" alt="Logo" class="nav-logo">
-    <button class="btn-theme-toggle">
-      <img src="./assets/images/icon-sun.svg" alt="toggle theme" class="theme-toggle_icon">
-    </button>
- </nav>
-</main>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <title>Character counter</title>
+  </head>
+  <body>
+    <main class="container">
+      <nav class="nav">
+        <img
+          src="./assets/images/logo-dark-theme.svg"
+          alt="Logo"
+          class="nav-logo"
+        />
+        <button class="btn-theme-toggle">
+          <img
+            src="./assets/images/icon-sun.svg"
+            alt="toggle theme"
+            class="theme-toggle_icon"
+          />
+        </button>
+      </nav>
+      <header id="header-container">
+        <h1>Analyze your text in real-time.</h1>
+      </header>
+      <section id="main-section-container">
+        <textarea
+          class="input-textarea"
+          placeholder="Start typing here… (or paste your text)"
+        ></textarea>
+
+        <div class="options-container">
+          <div class="exclude-spaces-container">
+            <div class="checkbox-container">
+              <input type="checkbox" id="exclude-spaces" class="checkbox" />
+              <label for="exclude-spaces">Exclude spaces</label>
+            </div>
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                id="set-character-limit"
+                class="checkbox"
+              />
+              <label for="set-character-limit">Set Character Limit</label>
+            </div>
+          </div>
+          <p>Approx. reading time: 0 minute</p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
