@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("assets/fonts/DM_Sans/static/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("assets/fonts/DM_Sans/static/DMSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("assets/fonts/DM_Sans/static/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-neutral-0: #ffffff;
+  --color-neutral-100: #f2f2f7;
+  --color-neutral-200: #e4e4ef;
+  --color-neutral-600: #404254;
+  --color-neutral-700: #2a2b37;
+  --color-neutral-800: #21222c;
+  --color-neutral-900: #12131a;
+  --color-blue-500: #c27cf8;
+  --color-blue-400: #d3a0fa;
+  --color-yellow-500: #ff9f00;
+  --color-orange-800: #da3701;
+  --color-orange-500: #fe8159;
+}
+
+body {
+  background-image: url("/assets/images/bg-dark-theme.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "DM Sans", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: "DM Sans", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 32px;
+  margin-left: 225px;
+  margin-right: 225px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  max-width: 245px;
+  max-height: 40px;
+}
+
+.btn-theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-neutral-700);
+  border-radius: 8px;
+  height: 44px;
+  width: 44px;
+}
+.theme-toggle_icon {
+  width: 22px;
+  height: 22px;
+}
