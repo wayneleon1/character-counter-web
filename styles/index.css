@@ -272,12 +272,19 @@ button {
 }
 
 #see-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   width: fit-content;
   color: var(--color-neutral-200);
   font-size: 20px;
   line-height: 140%;
   letter-spacing: -0.6px;
   cursor: pointer;
+}
+
+.see-more-icon {
+  width: 10px;
 }
 
 .list-container {
