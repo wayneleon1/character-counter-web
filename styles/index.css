@@ -112,7 +112,6 @@ button {
 }
 
 /* Main Section */
-
 #main-section-container {
   display: flex;
   flex-direction: column;
@@ -193,6 +192,18 @@ button {
   outline: none;
   background-color: var(--color-neutral-0);
   box-shadow: 0 0 0 2px var(--color-purple-500);
+}
+
+#character-limit-input {
+  background-color: transparent;
+  border-radius: 6px;
+  color: var(--color-neutral-200);
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -0.6px;
+  padding: 4px 12px;
+  width: 55px;
+  border: 1px solid var(--color-neutral-600);
 }
 
 /* Statistics and Density */
@@ -352,6 +363,7 @@ button {
   }
 
   #header-container > h1 {
+    width: 100%;
     font-size: 40px;
   }
   .options-container {
