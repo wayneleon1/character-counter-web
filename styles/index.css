@@ -147,6 +147,10 @@ button {
   letter-spacing: -0.6px;
 }
 
+.light-textarea::placeholder {
+  color: var(--color-neutral-900);
+}
+
 .options-container {
   display: flex;
   align-items: center;
@@ -181,7 +185,7 @@ button {
 }
 
 [type="checkbox"]:checked {
-  background: var(--color-purple-500);
+  background: var(--color-purple-400);
   border-color: var(--color-purple-500);
   background-image: url("/assets//images/icon-check.svg");
   background-repeat: no-repeat;
@@ -239,6 +243,13 @@ button {
   overflow: hidden;
   border-radius: 12px;
 }
+
+.stat-card:hover {
+  cursor: pointer;
+  scale: 1.02;
+  transition: scale 0.3s ease-in-out;
+}
+
 .stat-card > div:first-child {
   width: 70%;
   padding-left: 12px;
@@ -322,11 +333,11 @@ button {
   position: relative;
   overflow: hidden;
   flex: 1;
-  background: var(--color-neutral-800);
   border-radius: 999px;
   width: 100%;
   height: 12px;
   flex-shrink: 0;
+  background-color: var(--color-neutral-800);
 }
 
 .progress-bar-fill {
@@ -347,7 +358,6 @@ button {
 }
 
 /* Media Queries */
-
 /* Tablet */
 @media (max-width: 768px) {
   .container {
@@ -384,4 +394,30 @@ button {
   .progress-bar-container {
     height: 12px;
   }
+}
+
+/* Light theme - Letter Density */
+body.light-theme .letter-label,
+body.light-theme .letter-percentage {
+  color: var(--color-neutral-900);
+}
+
+body.light-theme .progress-bar-container {
+  background-color: var(--color-neutral-100);
+}
+
+body.light-theme #see-more-btn {
+  color: var(--color-neutral-900);
+}
+
+body.light-theme #letter-density-container > p {
+  color: var(--color-neutral-900);
+}
+
+.density-empty-msg {
+  color: var(--color-neutral-200);
+}
+
+body.light-theme .density-empty-msg {
+  color: var(--color-neutral-600);
 }
